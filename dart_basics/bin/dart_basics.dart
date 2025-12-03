@@ -1,5 +1,8 @@
-import 'package:dart_basics/first_feature.dart' as first_feature;
+import 'package:dart_basics/calculator.dart' as calculator;
+import 'package:dart_basics/greeter.dart';
 
 void main() {
-  print('Sum is: ${first_feature.add(10, 5)}!');
+  final greeter = Greeter('Goku');
+  print(greeter.greet());
+  print('Sum is: ${calculator.add(10, 5)}!');
 }

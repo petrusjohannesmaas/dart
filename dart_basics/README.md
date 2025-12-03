@@ -28,10 +28,10 @@ Now let’s write real code.
 
 We’ll create a reusable `add` function in `/lib`, call it from `/bin`, and prove it works using tests.
 
-#### 1. Create the Function — `/lib/first_feature.dart`
+#### 1. Create the Function — `/lib/calculator.dart`
 
 ```dart
-// lib/first_feature.dart
+// lib/calculator.dart
 
 /// Returns the sum of two integers.
 int add(int a, int b) {
@@ -46,24 +46,24 @@ int add(int a, int b) {
 ```dart
 // bin/dart_basics.dart
 
-import 'package:dart_basics/first_feature.dart' as first_feature;
+import 'package:dart_basics/calculator.dart' as calculator;
 
 void main() {
-  final result = first_feature.add(11, 5);
+  final result = calculator.add(11, 5);
   print('Sum is: $result!'); // Sum is: 16!
 }
 ```
 
-> Note: We use `as first_feature` to give the imported library a clean prefix.
+> Note: We use `as calculator` to give the imported library a clean prefix.
 
-#### 3. Write Real Tests — `/test/first_feature_test.dart`
+#### 3. Write Real Tests — `/test/calculator_test.dart`
 
 Replace the default test with this:
 
 ```dart
-// test/first_feature_test.dart
+// test/calculator_test.dart
 
-import 'package:dart_basics/first_feature.dart';
+import 'package:dart_basics/calculator.dart';
 import 'package:test/test.dart';
 
 void main() {
