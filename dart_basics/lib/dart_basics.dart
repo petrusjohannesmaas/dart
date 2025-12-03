@@ -1,3 +1,4 @@
-int calculate() {
-  return 6 * 7;
+int add (int a, int b) {
+  int sum = a + b;
+  return sum;
 }
