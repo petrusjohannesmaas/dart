@@ -1,4 +1,4 @@
-import 'package:dart_basics/first_function.dart';
+import 'package:dart_basics/first_feature.dart';
 import 'package:test/test.dart';
 
 void main() {
