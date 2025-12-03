@@ -1,5 +1,5 @@
-import 'package:dart_basics/dart_basics.dart' as dart_basics;
+import 'package:dart_basics/first_function.dart' as first_methods;
 
-void main(List<String> arguments) {
-  print('Sum is: ${dart_basics.add(10, 5)}!');
+void main() {
+  print('Sum is: ${first_methods.add(10, 5)}!');
 }
